@@ -6,7 +6,7 @@
                                             <div class="card-block">
                                                 <div class="row align-items-end">
                                                     <div class="col-8">
-                                                        <h4 class="text-white">1</h4>
+                                                        <h4 class="text-white">26.321.253</h4>
                                                         <h6 class="text-white m-b-0">Current User Login </h6>
                                                     </div>
                                                     <div class="col-4 text-right">
@@ -37,7 +37,7 @@
                                             <div class="card-block">
                                                 <div class="row align-items-end">
                                                     <div class="col-8">
-                                                        <h4 class="text-white">5</h4>
+                                                        <h4 class="text-white">37.869.122</h4>
                                                         <h6 class="text-white m-b-0">New User Entry</h6>
                                                     </div>
                                                     <div class="col-4 text-right">
@@ -68,7 +68,7 @@
                                             <div class="card-block">
                                                 <div class="row align-items-end">
                                                     <div class="col-8">
-                                                        <h4 class="text-white">2</h4>
+                                                        <h4 class="text-white">53.203.210</h4>
                                                         <h6 class="text-white m-b-0">Today User Activities</h6>
                                                     </div>
                                                     <div class="col-4 text-right">
@@ -99,7 +99,7 @@
                                             <div class="card-block">
                                                 <div class="row align-items-end">
                                                     <div class="col-8">
-                                                        <h4 class="text-white">10</h4>
+                                                        <h4 class="text-white">73.450.224</h4>
                                                         <h6 class="text-white m-b-0">Total User Register</h6>
                                                     </div>
                                                     <div class="col-4 text-right">
@@ -213,7 +213,7 @@
                                 </div>
 
 <script>
-function getDonut() {  
+function getDonut() {
         //alert($(".pcoded-navbar").html());
         const ctx = document.getElementById('myChart').getContext('2d');
         const myChart = new Chart(ctx, {
