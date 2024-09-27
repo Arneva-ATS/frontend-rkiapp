@@ -169,7 +169,7 @@
         var idx = $("#Descripsi").text();
         hideModal();
         $.ajax({
-            url: "https://api-rki.rkicoop.co.id/api/fello",
+            url: "http://127.0.0.1:8081/api/fello",
             type: "POST",
             data: {
                 cmd: "felloMultiBillerReversal",
@@ -250,7 +250,7 @@
         if (a[0].className.search("active") > 0) {
             swalStartLoading();
             $.post(
-                "api/fello",
+                "http://127.0.0.1:8081/api/fello",
                 {
                     cmd: "selHistoryWalletFello",
                     tgl_awal: $("#t1_tgl_awal").val(),

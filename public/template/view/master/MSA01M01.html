@@ -14,7 +14,7 @@
 
     function tipeUser() {
         $.post(
-            "https://api-rki.rkicoop.co.id/api/master/QueryMaster",
+            "http://127.0.0.1:8081/api/master/QueryMaster",
             {
                 cmd: "selTipeUser",
                 kop_id: $("#login_kop_id").val(),
@@ -51,7 +51,7 @@
 
     function selKoperasi() {
         $.post(
-            "https://api-rki.rkicoop.co.id/api/master/QueryMaster",
+            "http://127.0.0.1:8081/api/master/QueryMaster",
             {
                 cmd: "selKoperasi",
                 kop_id: $("#login_kop_id").val(),
@@ -91,7 +91,7 @@
             .empty()
             .append('<option   value="" >Chosee..</option>');
         $.post(
-            "https://api-rki.rkicoop.co.id/api/master/QueryMaster",
+            "http://127.0.0.1:8081/api/master/QueryMaster",
             {
                 cmd: "selToko",
                 kop_id: kop_id,
@@ -148,7 +148,7 @@
             salert("Not Setting Tab 1!", "warning", "Warning");
         } else if (a[1].className.search("active") > 0) {
             $.post(
-                "https://api-rki.rkicoop.co.id/api/master/QueryMaster",
+                "http://127.0.0.1:8081/api/master/QueryMaster",
                 {
                     cmd: "selUserNomor",
                 },
@@ -210,7 +210,7 @@
     function _del(param) {
         swalStartLoading();
         $.post(
-            "https://api-rki.rkicoop.co.id/api/master/InsUpDelMaster",
+            "http://127.0.0.1:8081/api/master/InsUpDelMaster",
             {
                 cmd: "delUser",
                 userId: param[0],
@@ -248,7 +248,7 @@
         var tipeUser = $("#tipeUser").val();
         swalStartLoading();
         $.post(
-            "https://api-rki.rkicoop.co.id/api/master/QueryMaster",
+            "http://127.0.0.1:8081/api/master/QueryMaster",
             {
                 cmd: "selUser",
                 tipeUser: tipeUser,
@@ -359,7 +359,7 @@
             if (userPwd == cfmPass) {
                 swalStartLoading();
                 $.post(
-                    "https://api-rki.rkicoop.co.id/api/master/InsUpDelMaster",
+                    "http://127.0.0.1:8081/api/master/InsUpDelMaster",
                     {
                         cmd: "InsUser",
                         userIns: userIns,

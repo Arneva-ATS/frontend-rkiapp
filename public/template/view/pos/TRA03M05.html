@@ -49,7 +49,7 @@
         var kembalian = $("#t2_kembalian").val();
         swalStartLoading();
         $.post(
-            "https://api-rki.rkicoop.co.id/api/pos/InsUpDelPos",
+            "http://127.0.0.1:8081/api/pos/InsUpDelPos",
             {
                 cmd: "insPosSimpleMobileMaster",
                 userIns: userIns,
@@ -224,7 +224,7 @@
         }
         swalStartLoading();
         $.post(
-            "https://api-rki.rkicoop.co.id/api/pos/QueryPos",
+            "http://127.0.0.1:8081/api/pos/QueryPos",
             {
                 cmd: "selPosMobileCore",
                 tgl_awal: $("#t1_tgl_awal").val(),

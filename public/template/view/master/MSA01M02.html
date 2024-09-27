@@ -9,7 +9,7 @@
 
     function koperasi() {
         $.post(
-            "https://api-rki.rkicoop.co.id/api/master/QueryMaster",
+            "http://127.0.0.1:8081/api/master/QueryMaster",
             {
                 cmd: "selKoperasi",
                 kop_id: $("#login_kop_id").val(),
@@ -58,7 +58,7 @@
         }
         //alert(param[2]);
         $.post(
-            "https://api-rki.rkicoop.co.id/api/master/QueryMaster",
+            "http://127.0.0.1:8081/api/master/QueryMaster",
             {
                 cmd: "selCodeDetail",
                 kop_id: kopid,
@@ -185,7 +185,7 @@
             $("#t2_detailName2").val("");
             $("#t2_detailName").val("");
             $("#t2_detailCode").val("");
-            //getNUmber();
+            getNUmber();
         }
     }
 
@@ -195,7 +195,7 @@
             salert("Not Setting Tab 1!", "warning", "Warning");
         } else if (a[1].className.search("active") > 0) {
             $.post(
-                "https://api-rki.rkicoop.co.id/api/master/QueryMaster",
+                "http://127.0.0.1:8081/api/master/QueryMaster",
                 {
                     cmd: "selCodeDetailNomor",
                     kop_id: $("#login_kop_id").val(),
@@ -340,7 +340,7 @@
         var mstCode = $("#t2_masterCode").val();
         var param2 = [mstCode, ""];
         $.post(
-            "https://api-rki.rkicoop.co.id/api/master/InsUpDelMaster",
+            "http://127.0.0.1:8081/api/master/InsUpDelMaster",
             {
                 cmd: "delCodeDetail",
                 masterCode: param[1],
@@ -379,7 +379,7 @@
             //alert("tab 2");
             swalStartLoading();
             $.post(
-                "https://api-rki.rkicoop.co.id/api/master/QueryMaster",
+                "http://127.0.0.1:8081/api/master/QueryMaster",
                 {
                     cmd: "selCodeMaster",
                 },
@@ -539,7 +539,7 @@
 
                 swalStartLoading();
                 $.post(
-                    "https://api-rki.rkicoop.co.id/api/master/InsUpDelMaster",
+                    "http://127.0.0.1:8081/api/master/InsUpDelMaster",
                     {
                         cmd: "InsCodeDetail",
                         userIns: userIns,
@@ -591,6 +591,7 @@
     function fnNew() {
         var a = document.getElementsByName("tab-idx");
         if (a[0].className.search("active") > 0) {
+            getNUmber();
             salert("Not Setting Tab 1!", "warning", "Warning");
         } else if (a[1].className.search("active") > 0) {
             //salert("Not Setting Tab 2!", 'warning', 'Warning');

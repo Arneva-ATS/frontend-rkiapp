@@ -45,7 +45,7 @@
 
             swalStartLoading();
             $.post(
-                "https://api-rki.rkicoop.co.id/api/pos/QueryPos",
+                "http://127.0.0.1:8081/api/pos/QueryPos",
                 {
                     cmd: "selDataBarangInventory",
                     kop_id: $("#login_kop_id").val(),

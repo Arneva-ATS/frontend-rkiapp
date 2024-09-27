@@ -17,11 +17,10 @@
                 swalStartLoading();
                 var total_real_amount = 0;
                 $.post(
-                    "https://api-rki.rkicoop.co.id/api/koperasi/QueryKoperasi",
+                    "http://127.0.0.1:8081/api/koperasi/QueryKoperasi",
                     {
                         cmd: "selJurnalKas",
                         tgl_awal: tgl_awal,
-                        tgl_akhir: tgl_akhir,
                         kop_id: $("#login_kop_id").val(),
                         coa: "",
                         jenisTran: "",
